@@ -1,6 +1,6 @@
 name: Build
 
-on: [push, workflow_dispatch]
+on: [push, pull_request]
 
 jobs:
   Build:
@@ -20,7 +20,3 @@ jobs:
         #          REDIS_HOST: ${{ secrets.REDIS_HOST }}
         #          REDIS_PASSWORD: ${{ secrets.REDIS_PASSWORD }}
         run: yarn build
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: build
