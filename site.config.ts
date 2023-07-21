@@ -61,6 +61,10 @@ export default siteConfig({
       url: 'https://meeple-professionals.square.site/'
     },
     {
+      title: 'Events Calendar',
+      pageId: 'a51eead6327b4a91bd3fa6b4ca00e60a'
+    },
+    {
       title: 'About',
       pageId: 'd75486d0cf60418fae514bdce650d282'
     }
