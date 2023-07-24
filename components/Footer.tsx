@@ -9,6 +9,7 @@ import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
+import { FaDiscord } from '@react-icons/all-files/fa/FaDiscord'
 
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
@@ -61,6 +62,18 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaTwitter />
+          </a>
+        )}
+
+        {config.discord && (
+          <a
+            className={styles.twitter}
+            href={`${config.discord}`}
+            title={`Join our discord`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaDiscord />
           </a>
         )}
 
